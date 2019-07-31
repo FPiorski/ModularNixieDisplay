@@ -496,29 +496,27 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR?
 U 1 1 5D560501
-P 2500 2300
-F 0 "#PWR?" H 2500 2150 50  0001 C CNN
-F 1 "+5V" H 2515 2473 50  0000 C CNN
-F 2 "" H 2500 2300 50  0001 C CNN
-F 3 "" H 2500 2300 50  0001 C CNN
-	1    2500 2300
+P 2600 2300
+F 0 "#PWR?" H 2600 2150 50  0001 C CNN
+F 1 "+5V" H 2615 2473 50  0000 C CNN
+F 2 "" H 2600 2300 50  0001 C CNN
+F 3 "" H 2600 2300 50  0001 C CNN
+	1    2600 2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5D560BCA
-P 2500 2900
-F 0 "#PWR?" H 2500 2650 50  0001 C CNN
-F 1 "GND" H 2505 2727 50  0000 C CNN
-F 2 "" H 2500 2900 50  0001 C CNN
-F 3 "" H 2500 2900 50  0001 C CNN
-	1    2500 2900
+P 2600 2900
+F 0 "#PWR?" H 2600 2650 50  0001 C CNN
+F 1 "GND" H 2605 2727 50  0000 C CNN
+F 2 "" H 2600 2900 50  0001 C CNN
+F 3 "" H 2600 2900 50  0001 C CNN
+	1    2600 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 2800 2500 2900
-Wire Wire Line
-	2500 2400 2500 2300
+	2600 2000 2600 1900
 Wire Wire Line
 	2950 5200 3350 5200
 Wire Wire Line
@@ -553,11 +551,11 @@ Text Label 1650 2600 0    50   ~ 0
 CLK
 Text Label 1650 2700 0    50   ~ 0
 DATA_IN
-Text Label 2500 2700 2    50   ~ 0
+Text Label 2600 2700 2    50   ~ 0
 DATA_OUT
-Text Label 2500 2600 2    50   ~ 0
+Text Label 2600 2600 2    50   ~ 0
 CLK
-Text Label 2500 2500 2    50   ~ 0
+Text Label 2600 2500 2    50   ~ 0
 LATCH
 $Comp
 L Nixie-rescue:+170V-power #PWR?
@@ -575,16 +573,16 @@ Wire Wire Line
 $Comp
 L Nixie-rescue:+170V-power #PWR?
 U 1 1 5D60968C
-P 2500 1900
-F 0 "#PWR?" H 2500 1750 50  0001 C CNN
-F 1 "+170V" H 2515 2073 50  0000 C CNN
-F 2 "" H 2500 1900 50  0001 C CNN
-F 3 "" H 2500 1900 50  0001 C CNN
-	1    2500 1900
+P 2600 1900
+F 0 "#PWR?" H 2600 1750 50  0001 C CNN
+F 1 "+170V" H 2615 2073 50  0000 C CNN
+F 2 "" H 2600 1900 50  0001 C CNN
+F 3 "" H 2600 1900 50  0001 C CNN
+	1    2600 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 1900 2500 2000
+	2600 2900 2600 2800
 $Comp
 L Nixie-rescue:+170V-power #PWR?
 U 1 1 5D615ED8
@@ -941,17 +939,6 @@ Wire Wire Line
 	2000 2800 2000 2900
 Connection ~ 1650 2800
 $Comp
-L Connector:DB9_Female_MountingHoles J3
-U 1 1 5D3FDF15
-P 3050 2400
-F 0 "J3" H 3230 2356 50  0000 L CNN
-F 1 "DB9_Female_MountingHoles" H 3230 2311 50  0001 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 3050 2400 50  0001 C CNN
-F 3 " ~" H 3050 2400 50  0001 C CNN
-	1    3050 2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:DB9_Male_MountingHoles J2
 U 1 1 5D406C9F
 P 1100 2400
@@ -978,28 +965,20 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5D4476A3
-P 3050 3100
-F 0 "#PWR?" H 3050 2850 50  0001 C CNN
-F 1 "GND" H 3055 2927 50  0000 C CNN
-F 2 "" H 3050 3100 50  0001 C CNN
-F 3 "" H 3050 3100 50  0001 C CNN
-	1    3050 3100
-	1    0    0    -1  
+P 3150 1700
+F 0 "#PWR?" H 3150 1450 50  0001 C CNN
+F 1 "GND" H 3155 1527 50  0000 C CNN
+F 2 "" H 3150 1700 50  0001 C CNN
+F 3 "" H 3150 1700 50  0001 C CNN
+	1    3150 1700
+	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3050 3100 3050 3000
+	3150 1700 3150 1800
 Wire Wire Line
 	1400 2800 1650 2800
 Wire Wire Line
-	2500 2800 2750 2800
-Wire Wire Line
-	2500 2700 2750 2700
-Wire Wire Line
-	2500 2600 2750 2600
-Wire Wire Line
-	2500 2500 2750 2500
-Wire Wire Line
-	2500 2400 2750 2400
+	2600 2000 2850 2000
 Wire Wire Line
 	1400 2700 1650 2700
 Wire Wire Line
@@ -1011,11 +990,32 @@ Wire Wire Line
 Wire Wire Line
 	1400 2000 1650 2000
 Wire Wire Line
-	2500 2000 2750 2000
+	2600 2800 2850 2800
 NoConn ~ 1400 2100
 NoConn ~ 1400 2200
 NoConn ~ 1400 2300
-NoConn ~ 2750 2100
-NoConn ~ 2750 2200
-NoConn ~ 2750 2300
+$Comp
+L Connector:DB9_Female_MountingHoles J3
+U 1 1 5D3FDF15
+P 3150 2400
+F 0 "J3" H 3330 2356 50  0000 L CNN
+F 1 "DB9_Female_MountingHoles" H 3330 2311 50  0001 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 3150 2400 50  0001 C CNN
+F 3 " ~" H 3150 2400 50  0001 C CNN
+	1    3150 2400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2600 2300 2600 2400
+Wire Wire Line
+	2600 2400 2850 2400
+Wire Wire Line
+	2850 2500 2600 2500
+Wire Wire Line
+	2600 2600 2850 2600
+Wire Wire Line
+	2850 2700 2600 2700
+NoConn ~ 2850 2100
+NoConn ~ 2850 2200
+NoConn ~ 2850 2300
 $EndSCHEMATC
