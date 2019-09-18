@@ -7,6 +7,8 @@ Schematics and board desing done in KiCad
   * Bring mounting holes closen to center
 * Fix transistor pinout
   * Change from Q_NPN_CBE to Q_NPN_BEC on the schematic
+* Reannotate components on the schematic
+  * Make R_n connect to Q_n and drive digit n
 * Add Rev 2 markings, of course
 
 ![top](PCB_TOP.png)
