@@ -1,0 +1,45 @@
+menu "UDP Server Configuration"
+
+    choice IP_MODE
+        prompt "IP Version"
+        help
+            The server can use either IPV4 or IPV6.
+
+        config IPV4
+            bool "IPV4"
+
+        config IPV6
+            bool "IPV6"
+            select CONNECT_IPV6
+
+    endchoice
+
+    config PORT
+        int "Port"
+        range 0 65535
+        default 3333
+        help
+            Local port the nixie-driving server will listen on.
+
+    config DATA_PIN
+        int "Data pin"
+        range 0 63
+        default 26
+        help
+            GPIO Pin used for data
+
+    config CLK_PIN
+        int "Clock pin"
+        range 0 63
+        default 14
+        help
+            GPIO Pin used for clock
+
+    config LATCH_PIN
+        int "Latch pin"
+        range 0 63
+        default 13
+        help
+            GPIO Pin used for latch
+
+endmenu
