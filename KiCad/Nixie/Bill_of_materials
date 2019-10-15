@@ -1,0 +1,13 @@
+Bill of materials:
+C0, C2 - https://lcsc.com/product-detail/Others_CCTC-TCC0805X7R104M500DT_C360619.html
+C1 - https://lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-SMD_10uF-400V_C117830.html
+C3 - https://lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-SMD_10uF-35V_C117835.html
+J0 - https://lcsc.com/product-detail/D-Sub-Connectors_D-SUB-9pin-Male-head90degree-black-pitch2-77mm-Tin-plating-With-hex-screws_C75750.html
+J2 - https://lcsc.com/product-detail/D-Sub-Connectors_D-SUB-9pin-Female90degree-black-pitch2-77mm-Tin-plating-With-hex-screws_C75749.html
+Q0 to Q9 - https://lcsc.com/product-detail/Transistors-NPN-PNP_MMBTA42_C181172.html
+R0 to R9 - https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_47KR-473-5_C139872.html
+R10 - https://lcsc.com/product-detail/Carbon-Film-Resistors_15KR-153-5_C120814.html
+U0 - https://lcsc.com/product-detail/74-Series_TM74HC595D_C79097.html
+U1 - https://lcsc.com/product-detail/4000-Series_ON-Semicon_MC14028BDR2G_ON-Semicon-ON-MC14028BDR2G_C233447.html
+J1 - 2 connector ARK terminal, despite what the 3d render tells you (I was too lazy to find the right footprint and just used a Phoenix connector, as it's the same, PCB-wise)
+NIX0 - Z5730M Nixie Tube, good luck finding them
