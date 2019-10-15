@@ -4,7 +4,7 @@ Schematics and board desing done in KiCad
 ##### ~~TODO for Rev 2:~~
 * ~~Fix Z5730M footprint~~
   * ~~Widen mounting holes to account for desoldered tubes~~
-  * ~~Bring mounting holes closen to center~~
+  * ~~Bring mounting holes closer to center~~
 * ~~Fix transistor pinout~~
   * ~~Change from Q_NPN_CBE to Q_NPN_BEC on the schematic~~
 * ~~Reannotate components on the schematic~~
